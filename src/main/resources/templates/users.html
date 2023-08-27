@@ -43,7 +43,7 @@
         <td th:text="${user.getSurname()}"></td>
         <td th:text="${user.getAge()}"></td>
         <td>
-            <form th:action="@{/{id}(id=${user.getId()})}">
+            <form th:action="@{/{id}/edit(id=${user.getId()})}">
                 <input type="submit" value="Update"/>
             </form>
 
